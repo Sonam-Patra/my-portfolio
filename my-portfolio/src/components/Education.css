@@ -1,0 +1,138 @@
+.education {
+  min-height: 100vh;
+  padding: 100px 10%;
+  background: #0f0718;
+  color: white;
+}
+
+.education-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Heading */
+.education-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.education-heading > p:first-child {
+  color: #c084fc;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.education-heading h2 {
+  font-size: 45px;
+  margin: 12px 0 15px;
+}
+
+.education-heading h2 span {
+  color: #a855f7;
+}
+
+.education-heading p:last-child {
+  color: #b9a8c9;
+  line-height: 1.7;
+}
+
+/* Education List */
+.education-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Vertical line */
+.education-list::before {
+  content: "";
+  position: absolute;
+  left: 110px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #a855f7;
+  opacity: 0.5;
+}
+
+/* Card */
+.education-card {
+  display: flex;
+  gap: 45px;
+  position: relative;
+}
+
+/* Year */
+.education-year {
+  width: 110px;
+  flex-shrink: 0;
+  color: #c084fc;
+  font-weight: 600;
+  padding-top: 25px;
+  text-align: right;
+}
+
+/* Content */
+.education-content {
+  flex: 1;
+  background: #171020;
+  padding: 25px 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  transition: 0.3s;
+}
+
+.education-content:hover {
+  transform: translateY(-5px);
+  border-color: #a855f7;
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+}
+
+.education-content h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+
+.education-content h4 {
+  margin: 0 0 12px;
+  color: #a855f7;
+  font-size: 16px;
+}
+
+.education-content p {
+  margin: 0;
+  color: #b9a8c9;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education {
+    padding: 80px 7%;
+  }
+
+  .education-heading h2 {
+    font-size: 38px;
+  }
+
+  .education-list::before {
+    display: none;
+  }
+
+  .education-card {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .education-year {
+    width: auto;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .education-content {
+    padding: 20px;
+  }
+}

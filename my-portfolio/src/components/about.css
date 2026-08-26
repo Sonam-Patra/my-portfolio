@@ -1,0 +1,141 @@
+.about {
+  min-height: 100vh;
+  padding: 100px 10%;
+  background: #0f0718;
+  color: white;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* About Image */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-box {
+  width: 320px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 2px solid #a855f7;
+  box-shadow: 0 0 35px rgba(168, 85, 247, 0.4);
+}
+
+.about-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* About Content */
+.about-content {
+  flex: 1;
+}
+
+.section-subtitle {
+  color: #c084fc;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-content h2 {
+  font-size: 45px;
+  margin: 0 0 25px;
+}
+
+.about-content h2 span {
+  color: #a855f7;
+}
+
+.about-content > p {
+  color: #c4b5d4;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Personal Information */
+.about-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.about-info div {
+  padding: 15px;
+  background: #1b1028;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.about-info div:hover {
+  transform: translateY(-4px);
+  border-color: #a855f7;
+}
+
+.about-info span {
+  color: #a855f7;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.about-info p {
+  margin: 5px 0 0;
+  color: white;
+}
+
+/* Contact Button */
+.about-btn {
+  display: inline-block;
+  padding: 13px 28px;
+  background: #a855f7;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background: #c084fc;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 7%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .about-image-box {
+    width: 280px;
+    height: 350px;
+  }
+
+  .about-content h2 {
+    font-size: 38px;
+  }
+
+  .about-info {
+    grid-template-columns: 1fr;
+  }
+}
