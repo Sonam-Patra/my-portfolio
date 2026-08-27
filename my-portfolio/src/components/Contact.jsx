@@ -38,22 +38,21 @@ function Contact() {
               </div>
             </div>
 
-            <div className="contact-card">
-              <div className="contact-icon">📱</div>
-              <div>
-                <h3>GITHUB</h3>
-                <p>Sonam-patra</p>
-              </div>
-            </div>
+           <a
+             href="https://github.com/Sonam-Patra"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="contact-card"
+>
+             <div className="contact-icon">◉</div>
 
-            <div className="contact-card">
-              <div className="contact-icon">📱</div>
-              <div>
-                <h3>linked in</h3>
-                <p>Sonam patra</p>
-              </div>
-            </div>
-  
+            <div>
+               <h3>GITHUB</h3>
+               <p>Sonam-Patra</p>
+                </div>
+            </a>
+
+           
             <div className="contact-card">
               <div className="contact-icon">📍</div>
               <div>
